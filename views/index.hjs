@@ -1,0 +1,7 @@
+{{> head.hjs}}
+{{#users}}
+<div class="col-md-1">
+    <a data-id="{{{id}}}" data-type="user" data-url="/{{{name}}}">{{{name}}}</a>
+</div>
+{{/users}}
+{{> foot.hjs}}

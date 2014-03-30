@@ -1,0 +1,10 @@
+<div class="user" data-type="user" data-id="{{user.id}}" data-url="/{{user.name}}">
+    <div class="polygons">
+{{#measurements}}
+        <div class="polygon transition" data-id="{{id}}" data-type="measurement" data-extra="{{user.id}}" data-url="/{{user.name}}/measurement/{{id}}">
+            <div class="value">{{value}} {{{unit}}}</div>
+            <div class="watermark">{{{shortname}}}</div>
+        </div>
+{{/measurements}}
+    </div>
+</div>

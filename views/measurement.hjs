@@ -1,0 +1,14 @@
+<div class="measurement" data-type="measurement" data-id="{{measurement.id}}" data-url="/{{user.name}}/measurement/{{measurement.id}}">
+    <div class="page-header">
+        <h1>{{measurement.name}}</h1>
+    </div>
+
+    <div class="chart"></div>
+
+    <form class"form">
+        <div class="form-group">
+            <label>Value:</label>
+            <input type="text" class="form-control" placeholder="Put your measured value here"/>
+        </div>
+    </form>
+</div>

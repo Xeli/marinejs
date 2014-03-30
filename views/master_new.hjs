@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Basic -->
+	<meta charset="UTF-8"/>
+    <title>{{title}}</title>
+    <meta name="description" content="Your description here" />
+    <meta name="keywords" content="Your keywords here" />
+    <meta name="author" content="Your author name here" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<!-- JS Files -->
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="/js/jquery.superslides.js"></script>
+	<script type="text/javascript" src="/highstock/js/highstock.src.js"></script>
+	<script type="text/javascript" src="/js/charts.js"></script>
+	<script type="text/javascript" src="/js/pageTransitions.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+
+</head>
+<body>
+    <!-- Begin content class -->
+    <div class="content">
+        {{> content }}
+    </div><!-- End content class -->
+	<!-- Begin background image slider content -->
+	<div id="slides">
+		<div class="slides-container">
+			<img src="/slides/06.jpg" alt="" />
+			<img src="/slides/05.jpg" alt="" />
+			<img src="/slides/04.jpg" alt="" />
+			<img src="/slides/01.jpg" alt="" />
+			<img src="/slides/02.jpg" alt="" />
+			<img src="/slides/03.jpg" alt="" />
+		</div>
+	</div>
+	<!-- End background image slider content -->
+
+	<!-- Alert message container -->
+	<div id="alertMSG"></div>
+
+</body>
+</html>

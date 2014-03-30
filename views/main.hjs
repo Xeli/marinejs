@@ -1,0 +1,5 @@
+<div class="main" data-id="0" data-type="main" data-url="/">
+    {{#users}}
+    <a href="#" class="transition" data-id="{{{id}}}" data-type="user" data-url="/{{{name}}}">{{{name}}}</a>
+    {{/users}}
+</div>

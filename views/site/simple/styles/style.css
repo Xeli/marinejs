@@ -1,0 +1,578 @@
+@charset "utf-8";
+
+
+/* 	==========================
+	--- General ---
+	--- . html ---
+	--- . body ---
+	========================== */
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #000;
+	display: none;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+@-o-viewport {
+	width: device-width;
+}
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+/* 	==========================
+	--- Typography ---
+	--- . Overlay ---
+	--- . Loader ---
+	--- . ProgressBar ---
+	--- . Percentage ---
+	========================== */
+
+h1, h2, h3 {
+	font-weight: normal;
+	white-space: nowrap;
+	color: #555;
+}
+
+h1 {
+	font-size: 24px;
+	margin: 10px auto;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 18px;
+	margin: 10px auto;
+}
+
+h3 {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-size: 12px;
+	margin-bottom: 5px;
+	line-height: 20px;
+	color: #555;
+}
+
+/* 	==========================
+	--- Content Styles ---
+	========================== */
+
+.nav-container span.fa-stack { margin-top: 20px; margin-bottom: 10px; }
+.nav-container span.fa-stack i { color: #ddd; text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); }
+
+.nav-container a {
+	display: block;
+	font-weight: normal;
+	font-size: 16px;
+	color: #fff;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+}
+
+.nav-container a:hover {
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+
+a.close-b {
+	width: 39px;
+	height: 39px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url('../img/close-01.png') no-repeat center center;
+}
+
+.p-board .b-content {
+	display: inline-block;
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+	background-color: #eee;
+}
+
+.b-content * {
+	line-height: 24px;
+	text-align: center;
+	display: none;
+}
+
+h3.social { color: #fff; margin-top: 10px }
+
+.left { text-align: left }
+.right { text-align: right }
+.center { text-align: center }
+.justify { text-align: justify }
+
+.clear {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+}
+
+hr {
+	background-color: #ccc;
+	border: none;
+	height: 1px;
+	width: 100%;
+	clear: both;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* 	==========================
+	--- Grid Layout ---
+	--- . Polygon ---
+	--- . Polygon Content ---
+	--- . Polygon Content Board ---
+	--- . Polygon Starting Position ---
+	========================== */
+
+.container {
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.content {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	position: relative;
+}
+
+.polygon {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	position: absolute;
+	background: url('../img/_ffffff.png') no-repeat 0 0;
+	z-index: 8;
+}
+
+.polygon .p-content {
+	position: absolute;
+	width: 198px;
+	height: 98px;
+	top: 51px;
+	left: 1px;
+	z-index: 10;
+	text-align: center;
+}
+
+.polygon.p1, .polygon.p2, .polygon.p3, 
+.polygon.p4, .polygon.p5, .polygon.p6, 
+.polygon.p7 { left: 0; top: 0; }
+
+
+.polygon .p-board {
+	position: absolute;
+	background-color: #eeeeee;
+	width: 200px;
+	height: 100px;
+	display: none;
+	top: 50px;
+	left: 0;
+	z-index: 999;
+	overflow: auto;
+}
+
+/* 	==========================
+	--- Countdown ---
+	--- . Content ---
+	--- . Number ---
+	--- . Letter ---
+	========================== */
+
+.counter-content {
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.counter-content span.number {
+	display: block;
+	font-weight: normal;
+	font-size: 40px;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+
+.counter-content span.letter {
+	display: block;
+	font-weight: normal;
+	font-size: 16px;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-transform: lowercase;
+}
+
+/* 	==========================
+	--- Logo ---
+	--- . Logo image ---
+	--- . Intro ---
+	========================== */
+
+.logo-container {
+	margin-top: 10px;
+	display: inline-block;
+	position: relative;
+}
+
+.logo-container a { text-decoration: none }
+
+.logo-container img { max-height: 100px; max-width: 200px; }
+
+.intro {
+	display: none;
+}
+
+span.intro {
+	font-size: 14px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	color: #999;
+}
+
+/* 	==========================
+	--- Social ---
+	--- . Google ---
+	--- . Facebook ---
+	--- . Twitter ---
+	--- . Linked-In ---
+	--- . Flickr ---
+	========================== */
+
+.social-container { display: inline-block; max-width: 155px; }
+.social-container a { display: inline-block; float: left; margin: 5px; position: relative; text-decoration: none; }
+.social-container a span.desc {
+	display: none;
+	white-space: nowrap;
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	color: #fff;
+	font-size: 12px;
+	padding-top: 8px;
+	background: url('../img/tooltip_arrow.png') no-repeat 0 0;
+}
+
+.google, .facebook, .twitter, .linked-in, .flickr { width: 21px; height: 21px; cursor: pointer; display: inline-block }
+.social-container .google {  background: url('../img/icon-02.png') no-repeat 0 0; }
+.social-container .facebook { background: url('../img/icon-02.png') no-repeat -21px 0; }
+.social-container .twitter { background: url('../img/icon-02.png') no-repeat -42px 0; }
+.social-container .linked-in { background: url('../img/icon-02.png') no-repeat -63px 0; }
+.social-container .flickr { background: url('../img/icon-02.png') no-repeat -84px 0; }
+
+/* 	==========================
+	--- Alert Message ---
+	--- . Success ---
+	--- . Error ---
+	========================== */
+
+#alertMSG { 
+	position: fixed; 
+	left: 50%; 
+	top: 0; 
+	background-color: #ddd; 
+	padding: 10px 20px; 
+	font-size: 12px;
+	line-height: 16px; 
+	text-align: left; 
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.75);
+	border-radius: 2px;
+	cursor: pointer;
+	display: none;
+	z-index: 9999;
+}
+#alertMSG.error { color: red; }
+#alertMSG.success { color: green; }
+#alertMSG.info { color: #a9b2b1; }
+#alertMSG i { margin-right: 6px; }
+
+
+/* 	==========================
+	--- Background Slide ---
+	========================== */
+
+#slides {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  overflow: hidden;
+}
+#slides .slides-container {
+  display: none;
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+#boverlay {
+	background: url('../img/50.png') repeat;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	z-index: -111;
+}
+
+#playBG {
+	background-position: center;
+	background-repeat:no-repeat;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -222;
+}
+
+/* 	==========================
+	--- Google Map ---
+	========================== */
+
+#googleMap {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* 	==========================
+	--- Contact ---
+	========================== */
+
+div.contact-info {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+div.contact-info .col {
+	display: none;
+	float: left;
+	margin: 10px auto;
+	font-size: 12px;
+}
+
+div.contact-info .col, div.contact-info i {	color: #555 }
+
+.col.compose { cursor: pointer }
+
+.col.compose:hover, .col.compose:hover i { color: #000000; }
+
+/* 	==========================
+	--- Form ---
+	--- . Input text ---
+	--- . Textarea ---
+	--- . Link button ---
+	========================== */
+
+form.compose-message {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%
+}
+
+form.compose-message a.btn {
+	text-decoration: none;
+	vertical-align: middle;
+	background-color: #ccc;
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 4px;
+	font-size: 14px;
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px
+}
+
+form.compose-message input[type=text] {
+	float: left;
+	border: none;
+	text-align: left;
+	background-color: #fff;
+	width: 220px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px 10px 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 2px
+}
+
+form.compose-message a.btn.close-message { float: left; }
+
+form.compose-message textarea {
+	float: left;
+	border: none;
+	text-align: left;
+	width: 480px;
+	height: 60px;
+	max-width: 480px;
+	min-width: 480px;
+	margin: 0 10px 10px 10px;
+	padding: 5px 10px;
+	border-radius: 2px;
+}
+
+form.subscribe {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 10px
+}
+
+form.subscribe a.btn {
+	text-decoration: none;
+	vertical-align: middle;
+	float: left;
+	text-decoration: none;
+	vertical-align: middle;
+	background-color: #ccc;
+	color: #fff;
+	padding: 8px 8px 8px 16px;
+	font-size: 14px;
+	height: 24px
+}
+
+form.subscribe input[type=text] {
+	border: none;
+	font-size: 12px;
+	font-weight: normal;
+	float: left;
+	width: 140px;
+	display: none;
+	background-color: #fff;
+	height: 38px;
+	line-height: 38px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px
+}
+
+form input[type=text]:focus, 
+form textarea:focus, 
+form a:hover {
+	background-color: #a9b2b1 !important;
+	color: #fff !important;
+}
+
+form a.btn i { 
+	text-decoration: none; 
+	color: #fff; 
+	margin-right: 10px 
+}
+
+/* 	==========================
+	--- jQuery preloader ---
+	--- . Overlay ---
+	--- . Loader ---
+	--- . ProgressBar ---
+	--- . Percentage ---
+	========================== */
+
+#jpreOverlay {
+	background-color: #eee;
+}
+
+#jpreLoader {
+	width:100%;
+	height:8px;
+	background-color: #ddd;
+}
+
+#jpreBar {
+	background-color:#a9b2b1;
+}
+
+#jprePercentage {
+	color: #a9b2b1;
+	font-family: sans-serif;
+	font-weight:normal;
+	font-size: 16px;
+	text-align:center;
+	top: -40px;
+}
+
+/*
+	=================================================================
+	=================================================================
+	=================================================================
+*/
+
+#demo {
+	display: inline-block;
+	width: 160px;
+	position: fixed;
+	left: -180px;
+	top: 40px;
+	background-color: #eee;
+	padding: 10px;
+	z-index: 999;
+}
+
+#demo span {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+
+#demo span.show-config {
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	border: none;
+	background-color: #eee;
+	position: absolute;
+	top: 0;
+	right: -30px;
+}
+#demo span.show-config i { color: #555; }
+#demo span i { font-size: 12px; margin-left: 4px; color: #fff; }
+#demo a.blink {
+	width: 80%;
+	background-color: #ddd;
+	font: normal 12px sans-serif;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #000;
+	padding: 10px;
+	margin-bottom: 10px;
+	float: left;
+	display: inline-block;
+}
+#demo a.blink.current, #demo a.blink:hover {
+	background-color: #999;
+	color: #fff;
+}
